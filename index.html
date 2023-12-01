@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formular øvelser</title>
+</head>
+
+<body>
+    <h1>Formular øvelser</h1>
+    <h2>Øvelse 1</h2>
+    <form>
+        <label>Navn</label>
+        <input>
+        <button>Indsend</button>
+    </form>
+    <br>
+    <hr>
+    <h2>Øvelse 2</h2>
+    <form>
+        <label for="full-name">Fulde navn</label>
+        <input id="full-name" name="fname" type="text">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+        <button>Indsend</button>
+    </form>
+    <br>
+    <hr>
+    <h2>Øvelse 3</h2>
+    <form>
+        <h3>Vælg dine interesser</h3>
+        <div class="form-control">
+            <input type="checkbox" id="coding" name="interest" value="kodning" checked>
+            <label for="coding">Kodning</label>
+        </div>
+
+        <div class="form-control">
+            <input type="checkbox" id="music" name="interest" value="design">
+            <label for="music">Design</label>
+        </div>
+    </form>
+    <br>
+    <hr>
+    <h3>Øvelse 4</h3>
+    <form>
+        <div class="form-felt">
+            <label for="first-name">Fornavn</label>
+            <input id="first-name" name="fname" type="text">
+            <label for="last-name">Efternavn</label>
+            <input id="last-name" name="fname" type="text">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <div class="dropdown">
+            <br>
+            <label for="position">Stilling</label>
+            <select name="position" id="position">
+                <option value="teacher">Underviser</option>
+                <option value="student">Studerende</option>
+            </select>
+        </div>
+        <div class="text">
+            <br>
+            <label for="besked">Besked</label>
+            <textarea name="besked" id="besked" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <button>Indsend</button>
+    </form>
+</body>
+
+</html>
